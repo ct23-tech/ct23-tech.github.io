@@ -44,9 +44,9 @@
 
       function draw() {
         clear();
-        imageMode(CENTER);
+        circleMode(CENTER);
         //image(variablename,x,y,width,height
-        image(crosshair,mouseX,mouseY,125,125)
+        circle(mouseX,mouseY,10,10)
         badguy.show();
         if (keyIsDown(32)){
           //play the sound
