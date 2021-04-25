@@ -34,7 +34,10 @@
       }
 
       function draw() {
-        clear()
+        clear() 
+        imageMode(CENTER);
+        //image(variablename,x,y,width,height
+        image(crosshair,mouseX,mouseY,125,125)
         badguy.show();
         badguy.update()
         //when someone presses the spacebar
@@ -42,9 +45,7 @@
           //play the sound
           boing.play();
         }
-         imageMode(CENTER);
-        //image(variablename,x,y,width,height
-        image(crosshair,mouseX,mouseY,125,125)
+
       }
        function badguy() {
     this.x = random(50, w-50);
