@@ -30,7 +30,6 @@
         noCursor();
         crosshair = loadImage("crosshair.png");
         badguy = new badguy();
-
       }
 
       function draw() {
@@ -38,13 +37,10 @@
         //image(variablename,x,y,width,height
         image(crosshair,mouseX,mouseY,125,125)
         badguy.show();
-        badguy.update()
-        //when someone presses the spacebar
         if (keyIsDown(32)){
           //play the sound
           boing.play();
         }
-
       }
        function badguy() {
     this.x = random(50, w-50);
