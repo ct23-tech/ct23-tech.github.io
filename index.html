@@ -29,11 +29,14 @@
       function setup() {
         createCanvas(w,h);
         noCursor();
+        badguy = new badguy();
         crosshair = loadImage("crosshair.png");
       }
 
       function draw() {
         clear()
+        badguy.show();
+        badguy.update()
         //when someone presses the spacebar
         if (keyIsDown(32)){
           //play the sound
