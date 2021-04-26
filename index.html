@@ -1,3 +1,4 @@
+  
 <html>
     <head>
     <meta charset="utf-8">
@@ -31,12 +32,6 @@
       var crosshair;
       var hit = false;
       
-      //create a preload function
-      function preload() {
-        soundFormats("mp3")
-        boing = loadSound("boing.mp3")
-      }
-
       function setup() {
         createCanvas(w,h);
         noCursor();
@@ -51,7 +46,7 @@
         fill(color('cyan'));
         circle(mouseX,mouseY,10);
         hit = collideCircleCircle(mouseX, mouseY, 10, badguy.x, badguy.y, 50)
-        if (keyIsPressed(32)){
+        if (keyIsDown(32)){
           badguy.update();
         }    
         else{}
