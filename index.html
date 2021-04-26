@@ -28,6 +28,7 @@
       var boing;
       //create a variable to store our image file
       var crosshair;
+      var hit = false;
       
       //create a preload function
       function preload() {
@@ -48,7 +49,8 @@
         badguy.show();
         fill(color('cyan'));
         circle(mouseX,mouseY,10);
-        if (keyIsDown(32) && collideCircleCircle(mouseX, mouseY, 10, badguy.x, badguy.y, 50)){
+        hit = collideCircleCircle(mouseX, mouseY, 10, badguy.x, badguy.y, 50)
+        if (keyIsDown(32) && hit == true){
           badguy.update();
         }
       }
