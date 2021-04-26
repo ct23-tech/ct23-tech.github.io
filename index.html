@@ -47,10 +47,9 @@
         //image(variablename,x,y,width,height
         badguy.show();
         fill(color('cyan'));
-        circle(mouseX,mouseY,10,10);
-        if (keyIsDown(32)){
-          //play the sound
-          boing.play();
+        circle(mouseX,mouseY,10);
+        if (keyIsDown(32) && ){
+          
         }
       }
        function badguy() {
@@ -59,7 +58,7 @@
     //Build function called SHOW to define characteristics
     this.show = function(){
       fill(color('yellow'));
-      circle(this.x,this.y,50,50);
+      circle(this.x,this.y,50);
     }
        this.update = function() {
       if (millis() >=  1000 + timer){
