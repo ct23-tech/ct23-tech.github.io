@@ -52,8 +52,9 @@
         hit = collideCircleCircle(mouseX, mouseY, 10, badguy.x, badguy.y, 50)
         if (keyIsDown(32)){
           badguy.update();
-        }
-      }
+        }    
+        else{}
+       }
        function badguy() {
     this.x = random(50, w-50);
     this.y = random(50, h-50);
