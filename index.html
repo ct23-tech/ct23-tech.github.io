@@ -48,8 +48,8 @@
         badguy.show();
         fill(color('cyan'));
         circle(mouseX,mouseY,10);
-        if (keyIsDown(32) && ){
-          
+        if (keyIsDown(32) && collideCircleCircle(mouseX, mouseY, 10, badguy.x, badguy.y, 50)){
+          badguy.update();
         }
       }
        function badguy() {
@@ -61,10 +61,8 @@
       circle(this.x,this.y,50);
     }
        this.update = function() {
-      if (millis() >=  1000 + timer){
       this.x = random(50,w-50);
       this.y = random(50,h-50);
-      timer = millis();
       }
     }
   }
