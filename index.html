@@ -50,7 +50,7 @@
         fill(color('cyan'));
         circle(mouseX,mouseY,10);
         hit = collideCircleCircle(mouseX, mouseY, 10, badguy.x, badguy.y, 50)
-        if (keyIsDown(32) && hit == true){
+        if (keyIsDown(32)){
           badguy.update();
         }
       }
