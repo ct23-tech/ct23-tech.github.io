@@ -32,6 +32,7 @@
       //create a variable to store our image file
       var crosshair;
       var hit = false;
+      var score = 0;
       
       function preload() {
         soundFormats("mp3")
@@ -69,9 +70,10 @@
       this.x = random(50,w-50);
       this.y = random(50,h-50);
       boing.play();
+      score = score + 1;
       }
     }
     </script>
-
+    <p>"Score: "</p><p>Score</p>
   </body>
 </html>
