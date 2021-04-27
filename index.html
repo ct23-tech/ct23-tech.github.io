@@ -59,6 +59,10 @@
       document.getElementById("skore").innerHTML = 'Score: ' + score;
       function draw() {
         clear();
+         if (time < 0){
+             noLoop();
+         }
+          else{}
         //image(variablename,x,y,width,height
         badguy.show();
         fill(color('cyan'));
