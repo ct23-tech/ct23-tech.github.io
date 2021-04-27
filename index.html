@@ -17,7 +17,7 @@
         </style>
     </head>
   <body>
-    <p>Score</p><p id="skore"></p>
+      <p id="skore"></p>
       <p id="countdown"></script>
     <script>
       const startingMinutes = 1;
@@ -81,7 +81,7 @@
       this.y = random(50,600);
       boing.play();
       score = score + 1;
-      document.getElementById("skore").innerHTML = score;
+      document.getElementById("skore").innerHTML = 'Score:' + score;
       }
     }
     </script>
