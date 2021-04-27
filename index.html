@@ -30,7 +30,7 @@
           seconds = seconds < 10 ? '0' + seconds : seconds;
           document.getElementById('countdown').innerHTML = minutes + ':' + seconds;
           time--;
-          time = time < 0 ? 0 : time; 
+          time = time < 0 ? -1 : time; 
       }
       
       window.alert('Press the S key to Destroy Targets');
