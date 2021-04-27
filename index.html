@@ -15,8 +15,8 @@
     </head>
   <body>
     <p>Score</p><p id="skore"></p>
+      
     <script>
-
       window.alert('Press the S key to Destroy Targets');
       var w = window.innerWidth;
       var h = window.innerHeight;
@@ -54,8 +54,8 @@
         else{}
        }
        function badguy() {
-    this.x = random(50, w-50);
-    this.y = random(50, h-50);
+    this.x = random(50, 1700);
+    this.y = random(50, 600);
     //Build function called SHOW to define characteristics
     this.show = function(){
       fill(color('yellow'));
@@ -63,7 +63,7 @@
     }
        this.update = function() {
       this.x = random(50,1700);
-      this.y = random(50,60);
+      this.y = random(50,600);
       boing.play();
       score = score + 1;
       document.getElementById("skore").innerHTML = score;
