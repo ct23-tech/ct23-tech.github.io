@@ -35,7 +35,7 @@
         boing = loadSound("boing.mp3")
       }
       function setup() {
-        createCanvas(1800,800);
+        createCanvas(1800,750);
         noCursor();
         crosshair = loadImage("crosshair.png");
         badguy = new badguy();
@@ -62,8 +62,8 @@
       circle(this.x,this.y,75);
     }
        this.update = function() {
-      this.x = random(50,w-50);
-      this.y = random(50,h-50);
+      this.x = random(50,1800);
+      this.y = random(50,750);
       boing.play();
       score = score + 1;
       document.getElementById("skore").innerHTML = score;
