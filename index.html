@@ -72,10 +72,7 @@
       document.getElementById("skore").innerHTML = 'Score: ' + score;
       function draw() {
         clear();
-         if (time <= 0){
-             noLoop();
-         }
-          else{}
+          
         //image(variablename,x,y,width,height
         badguy.show();
         fill(color('cyan'));
@@ -99,7 +96,6 @@
       this.y = random(50,h-100);
       boing.play();
       if (time <= 0){
-         noLoop();
          }
           else{
          score = score + 1;   
