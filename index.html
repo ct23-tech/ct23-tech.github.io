@@ -98,7 +98,12 @@
       this.x = random(50,w-60);
       this.y = random(50,h-100);
       boing.play();
-      score = score + 1;
+      if (time <= 0){
+         noLoop();
+         }
+          else{
+         score = score + 1;   
+         }
       document.getElementById("skore").innerHTML = 'Score: ' + score;
       }
     }
